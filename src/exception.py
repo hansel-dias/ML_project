@@ -11,8 +11,8 @@ def error_message_detail(error,error_detail:sys):
 
     _,_,exc_tb = error_detail.exc_info()
     file_name = exc_tb.tb_frame.f_code.co_filename
-    line_no = exc_tb.tb_frame.f_lineno
-    error_message = f"Caught {file_name} Error in file {line_no} at line {str(error=error)}"
+    line_no = exc_tb.tb_lineno
+    error_message = f"Caught error in file: {file_name} at line: {line_no} with error_message: {str(error)}"
     return error_message
 
 class CustomException(Exception):
