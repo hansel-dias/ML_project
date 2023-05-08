@@ -8,6 +8,8 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 
 
+from src.components.data_transformation import DataTransformation
+
 @dataclass
 class DataIngestionConfig:
     """
@@ -47,6 +49,8 @@ class DataIngestion:
             test_set.to_csv(self.ingestion_config.test_data_path,index=False,header=True)
             logging.info("Train_Test_split Completed")
 
+            logging.info(self.ingestion_config.train_data_path)
+
             return(
 
                 self.ingestion_config.train_data_path,
@@ -59,4 +63,8 @@ class DataIngestion:
         
 if __name__ == '__main__':
     obj = DataIngestion()
-    obj.initiate_data_ingestion()
+    train_data, test_data = obj.initiate_data_ingestion()
+
+    data_transform = DataTransformation()
+    train_arr,test_arr,_= data_transform.initiate_data_transformation(train_data,test_data)
+    logging.info('Transformation succesfull')
