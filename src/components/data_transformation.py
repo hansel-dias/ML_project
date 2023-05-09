@@ -28,7 +28,7 @@ class DataTransformationConfig:
   
     
     # pipeline_obj_path = os.path.join("D:/ML/trained_models","preprocessor.pkl")
-    pipeline_obj_path = os.path.join('trained_models','preprocessor.pkl')
+    pipeline_obj_path = os.path.join('preprocessor','preprocessor_obj.pkl')
     logging.info(f"{pipeline_obj_path}")
 
 
