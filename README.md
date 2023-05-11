@@ -4,6 +4,9 @@
 
 This dataset contains information about patients and their heart health. The data was sourced from [Kaggle](https://www.kaggle.com/johnsmith88/heart-disease-dataset).
 
+![Heart logo](https://media.istockphoto.com/id/1156928011/photo/heart-attack-heart-attack-conceptual-artwork-3d-illustration.jpg?s=612x612&w=0&k=20&c=A2kWPu_dG5vmcaKcfCGA6FVRRIHRJ83R0HhlAys5fK4=)
+
+
 The dataset includes the following features:
 
 - Age: age of the patient [years]
