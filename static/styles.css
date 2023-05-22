@@ -1,0 +1,66 @@
+/* Apply general styles to the form */
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  /* Style the heading */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Style the labels */
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Style the input fields */
+  input[type="number"],
+  input[type="radio"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Style the radio buttons */
+  input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect to the submit button */
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add spacing between radio buttons and their labels */
+  h2 {
+    margin-top: 15px;
+  }
+  
+  /* Style the form container */
+  body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  

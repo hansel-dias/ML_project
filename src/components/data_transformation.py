@@ -52,7 +52,7 @@ class DataTransformation:
         """
         try:
             numerical_f = ["Age", "RestingBP", "Cholesterol", "MaxHR", "Oldpeak", "FastingBS"]
-            categorical_f = ["Sex","ChestPainType", "RestingECG", "ExerciseAngina", "ST_Slope"]
+            categorical_f = ["Sex", "ChestPainType", "RestingECG", "ExerciseAngina", "ST_Slope"]
             
 
             # Transformation to be applied to numerical_cols
@@ -72,7 +72,6 @@ class DataTransformation:
             )
 
             logging.info("Catergorical columns standard scaling completed")
-
             # prepare transformation
             preprocessor = ColumnTransformer(transformers = [
                     ('num',numerical_transformer,numerical_f),

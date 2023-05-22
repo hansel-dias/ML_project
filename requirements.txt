@@ -9,4 +9,9 @@ setuptools==65.5.0
 dill
 catboost
 xgboost
+fastapi
+jinja2
+pydantic
+uvicorn
+# pickle
 # -e .

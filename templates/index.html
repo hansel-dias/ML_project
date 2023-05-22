@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required><br>
+
+        <label for="resting_bp">Resting Blood Pressure:</label>
+        <input type="number" name="resting_bp" id="resting_bp" required><br>
+
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="number" name="cholesterol" id="cholesterol" required><br>
+
+        <label for="max_hr">Maximum Heart Rate:</label>
+        <input type="number" name="max_hr" id="max_hr" required><br>
+
+        <label for="oldpeak">Oldpeak:</label>
+        <input type="number" name="oldpeak" id="oldpeak" required><br>
+        
+        <label for="fasting_bs">FastingBS:</label>
+        <input type="radio" name="binary" id="fasting_bs_1" value="1"> yes
+          </label>
+          <label for="radio2">
+            <input type="radio" name="binary" id="fasting_bs_2" value="0"> No
+          </label>
+
+        <h2>Sex:</h2>
+        <input type="radio" name="sex" id="sex_f" value="F" required>
+        <label for="sex_f">Female</label>
+        <input type="radio" name="sex" id="sex_m" value="M" required>
+        <label for="sex_m">Male</label><br>
+
+        <h2>Chest Pain Type:</h2>
+        <input type="radio" name="chest_pain_type" id="chest_pain_type_asy" value="ASY" required>
+        <label for="chest_pain_type_asy">Asymptomatic Chest Pain</label>
+        <input type="radio" name="chest_pain_type" id="chest_pain_type_ata" value="ATA" required>
+        <label for="chest_pain_type_ata">Atypical Angina Chest Pain</label>
+        <input type="radio" name="chest_pain_type" id="chest_pain_type_nap" value="NAP" required>
+        <label for="chest_pain_type_nap">Non-Anginal Pain Chest Pain</label>
+        <input type="radio" name="chest_pain_type" id="chest_pain_type_ta" value="TA" required>
+        <label for="chest_pain_type_ta">Typical Angina Chest Pain</label><br>
+
+        <h2>Resting ECG:</h2>
+        <input type="radio" name="resting_ecg" id="resting_ecg_lvh" value="LVH" required>
+        <label for="resting_ecg_lvh">Left Ventricular Hypertrophy Resting ECG</label>
+        <input type="radio" name="resting_ecg" id="resting_ecg_normal" value="Normal" required>
+        <label for="resting_ecg_normal">Normal Resting ECG</label>
+        <input type="radio" name="resting_ecg" id="resting_ecg_st" value="ST" required>
+        <label for="resting_ecg_st">ST-T Wave Abnormality Resting ECG</label><br>
+        
+        <h2>ST Slope:</h2>
+        <input type="radio" name="st_slope" id="st_slope_flat" value="Flat" required>
+        <label for="st_slope_flat">Flat</label>
+        <input type="radio" name="st_slope" id="st_slope_up" value="Up" required>
+        <label for="st_slope_up">Up</label>
+        <input type="radio" name="st_slope" id="st_slope_down" value="Down" required>
+        <label for="st_slope_down">Down</label><br>
+        
+
+        <h2>Exercise-Induced Angina:</h2>
+        <input type="radio" name="exercise_angina" id="exercise_angina_n" value="N">
+        
+        <input type="Submit" value="Predict">
+
+    </form>
+
